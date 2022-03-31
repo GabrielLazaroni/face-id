@@ -1,5 +1,6 @@
 import cv2
 import face_recognition
+import os
 
 cam = cv2.VideoCapture(0)
 
@@ -26,6 +27,8 @@ else:
     print('Acesso liberado')
   else: 
     print('Acesso negado') 
+
+os.remove('opencv_compare_image.jpg')    
 
 
   
